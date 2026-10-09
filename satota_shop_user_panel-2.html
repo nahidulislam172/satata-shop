@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080a08">
+<title>সততা সপ | অনলাইন ফ্যাশন শপ</title>
+<style>
+:root{--bg:#080a08;--panel:#111511;--panel2:#171d17;--gold:#d8b65a;--gold2:#f2d98c;--green:#167348;--text:#f7f5ee;--muted:#b9bdb4;--line:#30372f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.topbar{position:sticky;top:0;z-index:5;background:#090c09ee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:10px 14px;display:flex;align-items:center;gap:12px}.brand{display:flex;align-items:center;gap:10px;min-width:0}.logo{width:48px;height:48px;border-radius:12px;object-fit:contain;background:#fff;padding:3px}.brand h1{font-size:19px;margin:0;color:var(--gold2)}.brand small{display:block;color:var(--muted);font-size:11px}.menuBtn{margin-left:auto;background:transparent;border:1px solid var(--gold);color:var(--gold2);border-radius:10px;padding:8px 11px}.nav{display:none;padding:10px 14px;background:var(--panel);border-bottom:1px solid var(--line);gap:8px;flex-wrap:wrap}.nav.show{display:flex}.nav button{background:var(--panel2);border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:9px}.hero{padding:24px 16px 20px;background:radial-gradient(ellipse at top right,#21442d 0,transparent 52%),linear-gradient(135deg,#101710,#080a08);border-bottom:1px solid var(--line)}.hero .eyebrow{color:var(--gold);font-size:12px;letter-spacing:1px}.hero h2{font-size:clamp(27px,7vw,44px);line-height:1.2;margin:8px 0}.hero p{color:var(--muted);max-width:550px;line-height:1.7}.goldbtn{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#15150d;border:0;border-radius:10px;padding:11px 16px;font-weight:800}.wrap{max-width:1100px;margin:auto;padding:18px 14px}.searchrow{display:flex;gap:8px;margin-bottom:15px}.searchrow input{flex:1;min-width:0}.field{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:#0c100c;color:var(--text);outline:none}.field:focus{border-color:var(--gold)}.sectionhead{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:18px 0 12px}.sectionhead h3{margin:0;font-size:21px}.muted{color:var(--muted);font-size:13px}.categories{display:flex;gap:8px;overflow:auto;padding-bottom:5px}.categories button{white-space:nowrap;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:99px;padding:8px 13px}.categories button.active{background:var(--gold);color:#15150d;border-color:var(--gold)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product{border:1px solid var(--line);background:var(--panel);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}.product img{width:100%;aspect-ratio:4/4.5;object-fit:cover;background:#222}.product .info{padding:11px;display:flex;flex-direction:column;gap:7px;flex:1}.product h4{margin:0;font-size:15px}.desc{font-size:12px;color:var(--muted);line-height:1.5}.price{font-weight:800;color:var(--gold2);font-size:17px}.oldprice{text-decoration:line-through;color:#8c9188;font-size:12px;margin-left:5px}.orderbtn{width:100%;margin-top:auto}.tag{font-size:10px;color:#17150c;background:var(--gold2);border-radius:5px;padding:3px 6px;align-self:flex-start}.empty{padding:25px;text-align:center;color:var(--muted);grid-column:1/-1}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:15px;margin:12px 0}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.formgrid label{display:flex;flex-direction:column;gap:7px;color:#e8e5d9;font-size:13px;font-weight:650}.field-number{display:inline-flex;align-items:center;justify-content:center;min-width:25px;height:25px;padding:0 5px;margin-right:6px;border:1px solid #b9973e;border-radius:7px;background:#282316;color:#f3d477;font-size:11px;font-weight:800;vertical-align:middle}.form-section{grid-column:1/-1;margin:7px 0 0;padding:10px 12px;border-left:3px solid var(--gold);border-radius:7px;background:#191d17;color:var(--gold2);font-weight:800;font-size:14px}.form-hint{font-size:11px;color:var(--muted);font-weight:400;margin-top:-3px}.sheethead{margin-bottom:12px}.sheet #selectedProduct{margin-bottom:15px}.sheet .total{margin-top:12px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}@media(max-width:420px){.formgrid{grid-template-columns:1fr}.formgrid .full,.form-section{grid-column:1}}.full{grid-column:1/-1}.modal{position:fixed;inset:0;z-index:20;background:#000b;display:none;align-items:flex-end;justify-content:center;padding:0}.modal.show{display:flex}.sheet{background:#101510;border:1px solid var(--line);border-radius:18px 18px 0 0;width:100%;max-width:620px;max-height:92vh;overflow:auto;padding:18px}.sheethead{display:flex;align-items:center;justify-content:space-between;gap:12px}.sheethead h3{margin:0;color:var(--gold2)}.close{background:transparent;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:5px 10px}.total{display:flex;justify-content:space-between;padding:12px 0;color:var(--gold2);font-weight:800}.notice{background:#19251b;border:1px solid #31533a;padding:10px;border-radius:10px;color:#cde7d0;font-size:13px}.footer{border-top:1px solid var(--line);padding:25px 15px;color:var(--muted);text-align:center;line-height:1.8}.footer b{color:var(--gold2)}.trackbox{display:flex;gap:8px}.trackbox input{flex:1;min-width:0}.status{color:var(--gold2);font-weight:700}.hidden{display:none!important}
+@media(min-width:650px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.hero{padding:42px max(24px,calc((100vw - 1050px)/2))}.wrap{padding:25px 22px}.modal{align-items:center;padding:15px}.sheet{border-radius:18px}.logo{width:58px;height:58px}}
+@media(min-width:900px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.topbar,.nav{padding-left:max(18px,calc((100vw - 1100px)/2));padding-right:max(18px,calc((100vw - 1100px)/2))}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <!-- আপনার লোগোর ফাইল logo.png নামে এই HTML ফাইলের পাশে রাখুন -->
+    <img class="logo" src="logo.png" alt="সততা সপ লোগো" onerror="this.style.display='none'">
+    <div><h1>সততা সপ</h1><small>বিশ্বাসের সাথে ফ্যাশন</small></div>
+  </div>
+  <button class="menuBtn" id="menuBtn" aria-label="মেনু">☰ মেনু</button>
+</header>
+<nav class="nav" id="nav">
+  <button onclick="goHome()">হোম</button><button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">সব পণ্য</button><button onclick="document.getElementById('track').scrollIntoView({behavior:'smooth'})">অর্ডার ট্র্যাকিং</button><button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">যোগাযোগ</button>
+</nav>
+<section class="hero">
+  <div class="eyebrow">SATOTA SHOP • FASHION & STYLE</div>
+  <h2>আপনার স্টাইল,<br><span style="color:var(--gold2)">আপনার পরিচয়</span></h2>
+  <p>আধুনিক ফ্যাশন ও পছন্দের পোশাক কিনুন সহজে। পণ্য বেছে সরাসরি অর্ডার করুন—কোনো অ্যাকাউন্ট বা কার্টের দরকার নেই।</p>
+  <button class="goldbtn" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">পণ্য দেখুন ↓</button>
+</section>
+<main class="wrap">
+  <div class="searchrow"><input class="field" id="search" placeholder="পণ্যের নাম লিখে খুঁজুন…"><button class="goldbtn" id="searchBtn">খুঁজুন</button></div>
+  <div class="sectionhead"><h3>ক্যাটাগরি</h3><span class="muted">আপনার পছন্দ বেছে নিন</span></div>
+  <div class="categories" id="categories">
+    <button class="active" data-cat="সব">সব</button><button data-cat="পুরুষ">পুরুষ</button><button data-cat="মহিলা">মহিলা</button><button data-cat="শিশু">শিশু</button><button data-cat="জুতা ও সামগ্রী">জুতা ও সামগ্রী</button>
+  </div>
+  <section id="products">
+    <div class="sectionhead"><h3>আমাদের পণ্য</h3><span class="muted" id="count"></span></div>
+    <div class="grid" id="productGrid"></div>
+  </section>
+  <section class="card" id="track">
+    <div class="sectionhead"><h3>অর্ডার ট্র্যাকিং</h3></div>
+    <p class="muted">আপনার অর্ডার নম্বর লিখে অর্ডারের অবস্থা দেখুন। লাইভ ট্র্যাকিং চালু করতে Firebase/ব্যাকএন্ড সংযোগ করতে হবে।</p>
+    <div class="trackbox"><input class="field" id="trackId" placeholder="যেমন: SAT-123456"><button class="goldbtn" id="trackBtn">খুঁজুন</button></div>
+    <div id="trackResult" class="muted" style="margin-top:10px"></div>
+  </section>
+  <section class="card" id="contact">
+    <div class="sectionhead"><h3>যোগাযোগ</h3></div>
+    <p class="muted">অর্ডার বা পণ্য সম্পর্কে জানতে দোকানের যোগাযোগের তথ্য এখানে যোগ করুন।</p>
+    <p>ফোন: <span class="muted">এখানে আপনার দোকানের নম্বর যোগ করুন</span><br>সময়: <span class="muted">প্রতিদিন</span></p>
+  </section>
+</main>
+<footer class="footer"><b>সততা সপ</b><br>বিশ্বাসের সাথে ফ্যাশন<br><span>© <span id="year"></span> সততা সপ • সর্বস্বত্ব সংরক্ষিত</span><p class="muted">ডেলিভারি, রিটার্ন ও গোপনীয়তা নীতিমালা প্রকাশের আগে আপনার ব্যবসার নিয়ম অনুযায়ী পূরণ করুন।</p></footer>
+
+<div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+ <div class="sheet">
+  <div class="sheethead"><h3 id="orderTitle">অর্ডার ফর্ম</h3><button class="close" id="closeModal">বন্ধ ✕</button></div>
+  <div id="selectedProduct" class="card"></div>
+  <form id="orderForm">
+   <input type="hidden" id="productId">
+   <div class="formgrid">
+    <div class="form-section">১. ক্রেতার তথ্য</div>
+    <label class="full"><span><span class="field-number">০১</span>আপনার পূর্ণ নাম *</span><input class="field" name="name" required maxlength="100" placeholder="আপনার নাম লিখুন"></label>
+    <label><span><span class="field-number">০২</span>মোবাইল নম্বর *</span><input class="field" name="phone" required inputmode="tel" pattern="[0-9০-৯+ -]{10,18}" placeholder="01XXXXXXXXX"></label>
+    <label><span><span class="field-number">০৩</span>বিকল্প নম্বর</span><input class="field" name="altPhone" inputmode="tel" placeholder="ঐচ্ছিক"></label>
+    <div class="form-section">২. পণ্যের পছন্দ</div>
+    <label><span><span class="field-number">০৪</span>সাইজ *</span><select class="field" name="size" id="sizeSelect" required><option value="">সাইজ বাছুন</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option><option>প্রযোজ্য নয়</option></select></label>
+    <label><span><span class="field-number">০৫</span>রং</span><input class="field" name="color" placeholder="যেমন: কালো"></label>
+    <label><span><span class="field-number">০৬</span>পরিমাণ *</span><input class="field" name="quantity" type="number" min="1" max="20" value="1" required></label>
+    <div class="form-section">৩. ডেলিভারির ঠিকানা</div>
+    <label class="full"><span><span class="field-number">০৭</span>ডেলিভারি এলাকা নির্বাচন করুন *</span><select class="field" name="deliveryZone" id="deliveryZone" required><option value="">এলাকা বাছুন</option><option value="inside">ঢাকার ভিতরে — ৳৭০</option><option value="outside">ঢাকার বাইরে — ৳১২০</option></select><span class="form-hint">এলাকা নির্বাচন করলে ডেলিভারি চার্জ স্বয়ংক্রিয়ভাবে যোগ হবে।</span></label>
+    <label><span><span class="field-number">০৮</span>বিভাগ *</span><select class="field" name="division" id="divisionSelect" required><option value="">বিভাগ বাছুন</option><option>ঢাকা</option><option>চট্টগ্রাম</option><option>রাজশাহী</option><option>খুলনা</option><option>বরিশাল</option><option>সিলেট</option><option>রংপুর</option><option>ময়মনসিংহ</option></select></label>
+    <label><span><span class="field-number">০৯</span>জেলা *</span><input class="field" name="district" required placeholder="জেলার নাম"></label>
+    <label><span><span class="field-number">১০</span>উপজেলা/থানা *</span><input class="field" name="area" required placeholder="উপজেলা বা থানার নাম"></label>
+    <label class="full"><span><span class="field-number">১১</span>সম্পূর্ণ ডেলিভারি ঠিকানা *</span><textarea class="field" name="address" required rows="3" placeholder="বাড়ি/ফ্ল্যাট, রোড, গ্রাম বা এলাকার নাম লিখুন"></textarea></label>
+    <div class="form-section">৪. পেমেন্ট ও অতিরিক্ত তথ্য</div>
+    <label class="full"><span><span class="field-number">১২</span>পেমেন্ট পদ্ধতি *</span><select class="field" name="payment" required><option value="">পদ্ধতি বাছুন</option><option>ক্যাশ অন ডেলিভারি</option><option>বিকাশ (অ্যাডমিনের নির্দেশনা অনুযায়ী)</option><option>নগদ (অ্যাডমিনের নির্দেশনা অনুযায়ী)</option></select><span class="form-hint">মোবাইল পেমেন্টের ক্ষেত্রে দোকানের নির্দেশনা অনুসরণ করুন।</span></label>
+    <label class="full"><span><span class="field-number">১৩</span>অতিরিক্ত নির্দেশনা</span><textarea class="field" name="note" rows="2" placeholder="ঐচ্ছিক—ডেলিভারি সম্পর্কে কিছু জানাতে চাইলে লিখুন"></textarea></label>
+   </div>
+   <div class="total"><span>পণ্যের মূল্য</span><span id="productPrice">৳০</span></div>
+   <div class="total" style="margin-top:0;border-top:0"><span>ডেলিভারি চার্জ</span><span id="deliveryPrice">এলাকা বাছুন</span></div>
+   <div class="total" style="margin-top:0"><span>সর্বমোট</span><span id="totalPrice">৳০</span></div>
+   <p class="muted">ডেলিভারি চার্জ: ঢাকার ভিতরে ৳৭০, ঢাকার বাইরে ৳১২০ (প্রদর্শিত ডেমো রেট)।</p>
+   <button class="goldbtn" style="width:100%" type="submit">অর্ডার নিশ্চিত করুন</button>
+  </form>
+  <div id="orderResult" class="hidden"></div>
+ </div>
+</div>
+<script>
+const products = [
+ {id:"P001",name:"ক্লাসিক কালো শার্ট",cat:"পুরুষ",price:650,old:800,size:true,desc:"দৈনন্দিন ও ক্যাজুয়াল ব্যবহারের জন্য।",img:"https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=700&q=80"},
+ {id:"P002",name:"প্রিমিয়াম টি-শার্ট",cat:"পুরুষ",price:420,old:550,size:true,desc:"আরামদায়ক ফ্যাব্রিক ও আধুনিক ডিজাইন।",img:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"},
+ {id:"P003",name:"এলিগ্যান্ট ড্রেস",cat:"মহিলা",price:1250,old:1500,size:true,desc:"উৎসব ও বিশেষ দিনের জন্য ফ্যাশনেবল পোশাক।",img:"https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&q=80"},
+ {id:"P004",name:"ক্যাজুয়াল জ্যাকেট",cat:"পুরুষ",price:1450,old:1750,size:true,desc:"স্টাইলিশ লুকের জন্য আরামদায়ক জ্যাকেট।",img:"https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80"},
+ {id:"P005",name:"ফ্যাশন স্নিকার্স",cat:"জুতা ও সামগ্রী",price:1150,old:1400,size:false,desc:"দৈনন্দিন চলাফেরায় আরামদায়ক জুতা।",img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"},
+ {id:"P006",name:"শিশুদের পোশাক",cat:"শিশু",price:580,old:700,size:false,desc:"শিশুদের জন্য নরম ও আরামদায়ক পোশাক।",img:"https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80"}
+];
+let activeCategory="সব", selected=null;
+const money=n=>"৳"+Number(n).toLocaleString("bn-BD");
+function renderProducts(){
+ const term=document.getElementById("search").value.trim().toLowerCase();
+ const filtered=products.filter(p=>(activeCategory==="সব"||p.cat===activeCategory)&&(p.name.toLowerCase().includes(term)||p.desc.toLowerCase().includes(term)));
+ document.getElementById("count").textContent=filtered.length+"টি পণ্য";
+ document.getElementById("productGrid").innerHTML=filtered.map(p=>`<article class="product"><img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.src='https://placehold.co/600x700/151915/d8b65a?text=Satota+Shop'"><div class="info"><span class="tag">${p.cat}</span><h4>${p.name}</h4><div><span class="price">${money(p.price)}</span> <span class="oldprice">${money(p.old)}</span></div><div class="desc">${p.desc}</div><button class="goldbtn orderbtn" onclick="openOrder('${p.id}')">অর্ডার করুন</button></div></article>`).join("")||'<div class="empty">কোনো পণ্য পাওয়া যায়নি।</div>';
+}
+function openOrder(id){
+ selected=products.find(p=>p.id===id);if(!selected)return;
+ document.getElementById("productId").value=id;
+ document.getElementById("selectedProduct").innerHTML=`<div style="display:flex;gap:12px;align-items:center"><img src="${selected.img}" alt="" style="width:82px;height:92px;object-fit:cover;border-radius:9px"><div><b>${selected.name}</b><div class="price">${money(selected.price)}</div><small class="muted">${selected.desc}</small></div></div>`;
+ document.getElementById("sizeSelect").required=selected.size;
+ if(!selected.size)document.getElementById("sizeSelect").value="প্রযোজ্য নয়";else document.getElementById("sizeSelect").value="";
+ document.getElementById("orderForm").classList.remove("hidden");document.getElementById("orderResult").classList.add("hidden");
+ document.getElementById("orderForm").reset();document.getElementById("productId").value=id;
+ if(!selected.size)document.getElementById("sizeSelect").value="প্রযোজ্য নয়";
+ document.getElementById("productPrice").textContent=money(selected.price);
+ document.getElementById("deliveryZone").value=""; updateOrderTotals();
+ document.getElementById("orderModal").classList.add("show");document.body.style.overflow="hidden";
+}
+function closeOrder(){document.getElementById("orderModal").classList.remove("show");document.body.style.overflow=""}
+function goHome(){window.scrollTo({top:0,behavior:"smooth"});document.getElementById("nav").classList.remove("show")}
+document.getElementById("menuBtn").addEventListener("click",()=>document.getElementById("nav").classList.toggle("show"));
+document.getElementById("categories").addEventListener("click",e=>{if(e.target.dataset.cat){activeCategory=e.target.dataset.cat;document.querySelectorAll("#categories button").forEach(b=>b.classList.toggle("active",b===e.target));renderProducts()}});
+document.getElementById("searchBtn").addEventListener("click",renderProducts);
+document.getElementById("search").addEventListener("input",renderProducts);
+document.getElementById("closeModal").addEventListener("click",closeOrder);
+document.getElementById("orderModal").addEventListener("click",e=>{if(e.target.id==="orderModal")closeOrder()});
+function updateOrderTotals(){
+ if(!selected)return;
+ const qty=Math.max(1,Number(document.querySelector('[name="quantity"]').value)||1);
+ const zone=document.getElementById("deliveryZone").value;
+ const delivery=zone==="inside"?70:zone==="outside"?120:0;
+ document.getElementById("productPrice").textContent=money(selected.price*qty);
+ document.getElementById("deliveryPrice").textContent=zone?money(delivery):"এলাকা বাছুন";
+ document.getElementById("totalPrice").textContent=zone?money(selected.price*qty+delivery):money(selected.price*qty);
+}
+document.querySelector('[name="quantity"]').addEventListener("input",updateOrderTotals);
+document.getElementById("deliveryZone").addEventListener("change",updateOrderTotals);
+document.getElementById("orderForm").addEventListener("submit",e=>{
+ e.preventDefault();if(!selected)return;
+ const data=Object.fromEntries(new FormData(e.target).entries());
+ const orderId="SAT-"+Date.now().toString().slice(-8);
+ const deliveryCharge=data.deliveryZone==="inside"?70:120;const productTotal=selected.price*Number(data.quantity);const order={orderId,productId:selected.id,productName:selected.name,unitPrice:selected.price,productTotal,deliveryCharge,total:productTotal+deliveryCharge,...data,status:"অর্ডার গ্রহণের অপেক্ষায়",createdAt:new Date().toISOString()};
+ // ডেমো পর্যায়ে অর্ডার শুধু এই ব্রাউজারের localStorage-এ থাকে; লাইভ ব্যবহারের আগে নিরাপদ ব্যাকএন্ড/Firebase যুক্ত করুন।
+ const saved=JSON.parse(localStorage.getItem("satotaDemoOrders")||"[]");saved.push(order);localStorage.setItem("satotaDemoOrders",JSON.stringify(saved));
+ e.target.classList.add("hidden");const r=document.getElementById("orderResult");r.classList.remove("hidden");r.innerHTML=`<div class="notice"><h3>অর্ডার তথ্য তৈরি হয়েছে</h3><p>আপনার ডেমো অর্ডার নম্বর:</p><h2>${orderId}</h2><p>পণ্য: ${selected.name}<br>পণ্যের মূল্য: ${money(order.productTotal)}<br>ডেলিভারি চার্জ: ${money(order.deliveryCharge)}<br><b>সর্বমোট: ${money(order.total)}</b></p><p>এই অর্ডার এখনো দোকানের সার্ভারে পাঠানো হয়নি। লাইভ অর্ডারের জন্য Firebase/ব্যাকএন্ড সংযোগ প্রয়োজন।</p><button class="goldbtn" onclick="GenCopyOrder('${orderId}')">অর্ডার নম্বর কপি করুন</button></div>`;
+});
+function GenCopyOrder(id){if(navigator.clipboard)navigator.clipboard.writeText(id).then(()=>alert("অর্ডার নম্বর কপি হয়েছে"));else alert("আপনার অর্ডার নম্বর: "+id)}
+document.getElementById("trackBtn").addEventListener("click",()=>{
+ const id=document.getElementById("trackId").value.trim();const orders=JSON.parse(localStorage.getItem("satotaDemoOrders")||"[]");const o=orders.find(x=>x.orderId===id);
+ document.getElementById("trackResult").innerHTML=o?`অর্ডার: <b>${o.productName}</b><br>অর্ডার নম্বর: ${o.orderId}<br>অবস্থা: <span class="status">${o.status}</span><br><small>এটি শুধু এই ব্রাউজারে সংরক্ষিত ডেমো অর্ডার।</small>`:"এই ব্রাউজারে অর্ডারটি পাওয়া যায়নি। লাইভ ট্র্যাকিংয়ের জন্য সার্ভার সংযোগ দরকার।";
+});
+document.getElementById("year").textContent=new Date().getFullYear();
+renderProducts();
+</script>
+</body>
+</html>
